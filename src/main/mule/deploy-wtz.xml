@@ -12,7 +12,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:request-config>
 	<flow name="deploy-wtzFlow" doc:id="ebf148d0-65f6-4ac3-9693-ea20a25c242f" >
 		<http:listener doc:name="Listener" doc:id="c4285262-0a84-4274-90ea-59dbde215048" config-ref="HTTP_Listener_config" path="/{region}/{city}"/>
-		<logger level="INFO" doc:name="Logger" doc:id="7ca1a5b7-1cf9-4df6-a84e-901a875c742e" message='"Request Received from Asia zone"'/>
+		<logger level="INFO" doc:name="Logger" doc:id="7ca1a5b7-1cf9-4df6-a84e-901a875c742e" message='"Request Received from Asia zone Kolkata"'/>
 		<http:request method="GET" doc:name="Request" doc:id="1a8d3a25-3d7f-412a-8de7-04cf769af1a6" config-ref="HTTP_Request_configuration" path="/{region}/{city}">
 			<http:uri-params ><![CDATA[#[output application/java
 ---
