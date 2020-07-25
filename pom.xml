@@ -31,6 +31,17 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+				<CloudHubDeployment>
+				        <uri>https://anypoint.mulesoft.com</uri>
+                        <muleVersion>4.2.2</muleVersion>
+                        <username>vreddygari02</username>
+                        <password>Reddy_123</password>
+                        <applicationName>deploy-wtz</applicationName>
+                        <environment>Sandbox</environment>
+                        <workerType>MICRO</workerType>
+                        <objectStoreV2>true</objectStoreV2>
+                        <workers>1</workers>
+				</CloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
