@@ -15,7 +15,7 @@ pipeline
    }
    }
    
-   stage('Deploy application to CloudHub'){
+   stage('Deploy Mule Application To CloudHub'){
    step{
    bat 'mvn package deploy -DmuleDeploy'
    }
