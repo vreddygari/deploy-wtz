@@ -7,10 +7,8 @@ pipeline
    steps{
    bat 'mvn clean install'
    }
-   }
-   
-   
-   
+   }  
+    
    stage('Deploy Mule Application To CloudHub'){
    steps{
    bat 'mvn package deploy -DmuleDeploy'
