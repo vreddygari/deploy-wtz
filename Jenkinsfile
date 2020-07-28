@@ -4,25 +4,25 @@ pipeline
   agent any
    stages{
    stage('Build Application'){
-   step{
+   steps{
    bat 'mvn clean install'
    }
    }
    
    stage('Munit Test Application'){
-   step{
+   steps{
    bat 'mvn test'
    }
    }
    
    stage('Deploy Mule Application To CloudHub'){
-   step{
+   steps{
    bat 'mvn package deploy -DmuleDeploy'
    }
    }
    
    stage('Perform Regression testing'){
-   step{
+   steps{
    bat 'C:\\Users\\vreddygari\\AppData\\Roaming\\npm\\newman run D:\\newman\\WorldTimeZone-Collections.postman_collection.json --disable-unicode'
    }
    }
