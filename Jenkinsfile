@@ -9,11 +9,7 @@ pipeline
    }
    }
    
-   stage('Munit Test Application'){
-   steps{
-   bat 'mvn test'
-   }
-   }
+   
    
    stage('Deploy Mule Application To CloudHub'){
    steps{
